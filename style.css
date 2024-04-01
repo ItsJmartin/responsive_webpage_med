@@ -703,26 +703,26 @@ input[type="text"] {
 
 /* footer section */
 
-.footer_wrap{
+.footer_wrap {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding: 80px 112px 100px;
+    padding: 80px 112px 50px;
 }
 
-.end_d ul{
+.end_d ul {
     display: flex;
     flex-direction: column;
 
 }
 
-.end_d ul p{
+.end_d ul p {
     color: #252B42;
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 20px;
 }
 
-.end_d ul a{
+.end_d ul a {
     padding-bottom: 15px;
     text-decoration: none;
     font-size: 14px;
@@ -730,13 +730,33 @@ input[type="text"] {
     color: #737373;
 }
 
-.end_d .d_icon{
-    display:flex;
+.end_d .d_icon {
+    display: flex;
     gap: 15px;
     padding: 4px 0;
 }
 
-.d_icon span{
+.d_icon span {
     color: #8D5CF6;
     font-size: 30px;
+}
+
+.footer_end {
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 140px;
+}
+
+.f_text{
+    font-weight: 700;
+    font-size: 14px;
+    color: #737373;
+}
+
+.f_media{
+    display: flex;
+    gap: 20px;
+    color: #8D5CF6;
 }
