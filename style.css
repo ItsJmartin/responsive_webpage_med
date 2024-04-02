@@ -41,6 +41,11 @@ body {
     cursor: pointer;
 }
 
+.navlink ul a:hover {
+    transition: 0.5s;
+    color: #8D5CF6;
+}
+
 .holow_btn {
     border: none;
     color: #8D5CF6;
@@ -48,6 +53,11 @@ body {
     font-weight: 600;
     padding-right: 20px;
     cursor: pointer;
+}
+
+.holow_btn:hover {
+    transition: 0.5s;
+    color: #252B42;
 }
 
 .filled_btn {
@@ -61,6 +71,12 @@ body {
     font-weight: 600;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
+}
+
+.filled_btn:hover {
+    transition: 0.5s;
+    color: #252B42;
 }
 
 .layout_1 {
@@ -103,14 +119,29 @@ body {
 
 .content_btn .filled_btn {
     padding: 15px 40px;
+    border: solid #8D5CF6;
+    cursor: pointer;
+}
+
+.content_btn .filled_btn:hover {
+    background-color: transparent;
+    border: solid #8D5CF6;
+    color: #8D5CF6;
+
 }
 
 .content_btn .holow_btn {
-    padding: 15px 40px;
+    padding: 15px 55px;
     background-color: #f0f0f5;
     border: solid #8D5CF6;
     border-radius: 5px;
     margin-left: 10px;
+}
+
+.content_btn .holow_btn:hover {
+    background-color: #8D5CF6;
+    color: #FFFFFF;
+    border-color: solid #8D5CF6;
 }
 
 /* second section */
@@ -146,13 +177,7 @@ body {
     padding: 0 112px 100px;
 }
 
-.cards_container :hover {
-    background-color: #8D5CF6;
-    color: #FFFFFF;
-
-}
-
-.tile {
+.tile1 {
     box-shadow: 0 13px 19px 0 #00000012;
     padding: 34px 40px;
     align-items: flex-start;
@@ -233,11 +258,28 @@ body {
     color: #8D5CF6;
     padding: 0;
 }
+.detailes .filled_btn:hover{
+    color: black;
+}
 
 /* section 5 cards*/
 
 .card_img {
     position: relative;
+}
+
+.card_img::before {
+    content: "Sale";
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #E74040;
+    padding:  5px 10px;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+    justify-self: flex-start;
+    border-radius: 3px;
 }
 
 .card_icon {
@@ -253,13 +295,18 @@ body {
 }
 
 .i {
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 100px;
     height: 40px;
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.i:hover{
+    transition: 0.5s;
+    background-color: #8D5CF6;
+    color: #FFFFFF;
 }
 
 .card_block {
@@ -388,7 +435,7 @@ body {
     gap: 10px;
 }
 
-.d_sub .filled_btn :hover {
+.d_sub .filled_btn:hover {
     background-color: #8D5CF6;
     color: #FFFFFF;
 }
@@ -407,13 +454,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 0 112px 200px;
+    padding: 0 112px 150px;
 }
 
-.prizing :hover {
-    background-color: #26335D;
-    color: #FFFFFF;
-}
 
 .list {
     position: relative;
@@ -426,6 +469,11 @@ body {
     max-width: 328px;
     padding: 50px 40px 50px 40px;
     gap: 10px;
+}
+.list:hover{
+    background-color: #26335D;
+    color: #FFFFFF;
+
 }
 
 
@@ -680,11 +728,15 @@ label {
 }
 
 input[type="text"] {
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
     border: none;
     width: 688px;
     height: 15px;
     padding: 20px 40px;
     border-radius: 5px;
+    box-shadow: 0 23px 29px 0 #00000012;
 }
 
 .text_btn {
@@ -699,6 +751,9 @@ input[type="text"] {
     border: none;
     padding: 20px 40px;
     border-radius: 0 5px 5px 0;
+}
+.text_btn:hover{
+    color: black;
 }
 
 /* footer section */
@@ -749,13 +804,13 @@ input[type="text"] {
     padding: 0 140px;
 }
 
-.f_text{
+.f_text {
     font-weight: 700;
     font-size: 14px;
     color: #737373;
 }
 
-.f_media{
+.f_media {
     display: flex;
     gap: 20px;
     color: #8D5CF6;
