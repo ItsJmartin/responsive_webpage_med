@@ -174,10 +174,10 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding: 0 112px 100px;
+    padding: 0 112px 150px;
 }
 
-.tile1 {
+.tile {
     box-shadow: 0 13px 19px 0 #00000012;
     padding: 34px 40px;
     align-items: flex-start;
@@ -185,7 +185,15 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 241px;
-    gap: 5px;
+    gap: 20px;
+}
+
+.tile:hover {
+    color: #FFFFFF;
+    transition: 0.5s;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: #8D5CF6;
 }
 
 .tile h3 {
@@ -208,7 +216,6 @@ body {
     background-color: #E74040;
     display: flex;
     flex-direction: column;
-    margin-top: inherit;
 }
 
 
@@ -218,7 +225,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 112px 100px;
+    padding: 0 112px 150px;
 }
 
 .detailes {
@@ -258,7 +265,8 @@ body {
     color: #8D5CF6;
     padding: 0;
 }
-.detailes .filled_btn:hover{
+
+.detailes .filled_btn:hover {
     color: black;
 }
 
@@ -274,7 +282,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     background-color: #E74040;
-    padding:  5px 10px;
+    padding: 5px 10px;
     left: 20px;
     top: 20px;
     position: absolute;
@@ -303,7 +311,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.i:hover{
+
+.i:hover {
     transition: 0.5s;
     background-color: #8D5CF6;
     color: #FFFFFF;
@@ -454,7 +463,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 0 112px 150px;
+    padding: 0 112px 50px;
 }
 
 
@@ -470,9 +479,12 @@ body {
     padding: 50px 40px 50px 40px;
     gap: 10px;
 }
-.list:hover{
+
+.list:hover {
+    transition: 0.5s;
     background-color: #26335D;
     color: #FFFFFF;
+    border-radius: 5px;
 
 }
 
@@ -752,7 +764,8 @@ input[type="text"] {
     padding: 20px 40px;
     border-radius: 0 5px 5px 0;
 }
-.text_btn:hover{
+
+.text_btn:hover {
     color: black;
 }
 
@@ -793,15 +806,13 @@ input[type="text"] {
 
 .d_icon span {
     color: #8D5CF6;
-    font-size: 30px;
 }
 
 .footer_end {
     background-color: #FAFAFA;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 140px;
+    justify-content: space-around;
 }
 
 .f_text {
@@ -814,4 +825,8 @@ input[type="text"] {
     display: flex;
     gap: 20px;
     color: #8D5CF6;
+}
+
+.f_media i {
+    cursor: pointer;
 }
