@@ -8,6 +8,11 @@ body {
     margin: 0;
 }
 
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
 .navbar {
     background-color: #f0f0f5;
     display: flex;
@@ -16,7 +21,7 @@ body {
     padding: 20px 170px 0px 170px;
 }
 
-.mh {
+.logo {
     font-size: 24px;
     font-weight: 700;
     color: #252B42;
@@ -47,6 +52,7 @@ body {
 }
 
 .holow_btn {
+    padding: 15px 25px 15px 25px;
     border: none;
     color: #8D5CF6;
     font-size: 14px;
@@ -79,7 +85,7 @@ body {
     color: #252B42;
 }
 
-.layout_1 {
+header {
     margin: 0;
     padding: 0;
     display: flex;
@@ -88,7 +94,7 @@ body {
     background-color: #f0f0f5;
 }
 
-.layout_1 .content {
+header .header_dtls {
     padding-left: 100px;
     background-color: transparent;
     flex-direction: column;
@@ -110,27 +116,27 @@ body {
     font-weight: 700;
 }
 
-.content .sub_text {
+.header_dtls .sub_text {
     max-width: 458px;
     font-size: 20px;
     font-weight: 400;
     color: #737373;
 }
 
-.content_btn .filled_btn {
+.header_btns .filled_btn {
     padding: 15px 40px;
     border: solid #8D5CF6;
     cursor: pointer;
 }
 
-.content_btn .filled_btn:hover {
+.header_btns .filled_btn:hover {
     background-color: transparent;
     border: solid #8D5CF6;
     color: #8D5CF6;
 
 }
 
-.content_btn .holow_btn {
+.header_btns .holow_btn {
     padding: 15px 55px;
     background-color: #f0f0f5;
     border: solid #8D5CF6;
@@ -138,7 +144,7 @@ body {
     margin-left: 10px;
 }
 
-.content_btn .holow_btn:hover {
+.header_btns .holow_btn:hover {
     background-color: #8D5CF6;
     color: #FFFFFF;
     border-color: solid #8D5CF6;
@@ -146,22 +152,22 @@ body {
 
 /* second section */
 
-.layout_2 .layer {
+.section_two .layer {
     padding: 100px 112px;
 }
 
-.layout_2 .content {
+.section_two .start_text {
     color: #8D5CF6;
     font-weight: 700;
 }
 
-.layout_2 .xl_text {
+.section_two .xl_text {
     font-size: 40px;
     font-weight: 700;
     color: #252B42;
 }
 
-.layout_2 .sub_text p {
+.section_two .sub_text p {
     max-width: 469px;
     font-size: 14px;
     font-weight: 400;
@@ -177,7 +183,7 @@ body {
     padding: 0 112px 150px;
 }
 
-.tile {
+.card {
     box-shadow: 0 13px 19px 0 #00000012;
     padding: 34px 40px;
     align-items: flex-start;
@@ -188,7 +194,7 @@ body {
     gap: 20px;
 }
 
-.tile:hover {
+.card:hover {
     color: #FFFFFF;
     transition: 0.5s;
     border-radius: 5px;
@@ -196,20 +202,20 @@ body {
     background-color: #8D5CF6;
 }
 
-.tile h3 {
+.card h3 {
     font-size: 15px;
     font-weight: 700;
     color: #252B42;
     display: contents;
 }
 
-.tile p {
+.card p {
     color: #737373;
     font-size: 14px;
     font-weight: 400;
 }
 
-.tile h3::after {
+.card h3::after {
     content: "";
     width: 50px;
     height: 2px;
@@ -221,7 +227,7 @@ body {
 
 /* layout 3 and 4*/
 
-.layout_3 {
+.section_three {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -490,8 +496,8 @@ body {
 
 
 .check_p {
-    margin-top: -28%;
-    margin-right: -89%;
+    top: -38px;
+    right: -23px;
     position: absolute;
 }
 
