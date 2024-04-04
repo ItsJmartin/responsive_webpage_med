@@ -231,7 +231,7 @@ header .header_dtls {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 112px 150px;
+    padding: 0 112px 130px;
 }
 
 .detailes {
@@ -276,6 +276,45 @@ header .header_dtls {
     color: black;
 }
 
+.hero_three {
+    position: relative;
+}
+
+.hero_three img {
+    border-radius: 20px;
+}
+
+.play_icon {
+    position: absolute;
+    border-radius: 73.6px;
+    border: none;
+    padding: 20.8px 22.8px 20.8px 22.8px;
+    background-color: #8D5CF6;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    Top: 136px;
+    Left: 210px
+}
+/* .play_icon:hover{
+    color: #8D5CF6;
+    background-color: #FFFFFF ;
+} */
+
+
+.play_icon .material-symbols-outlined {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+.play_icon .material-symbols-outlined:hover{
+color: black;
+}
 /* section 5 cards*/
 
 .card_img {
