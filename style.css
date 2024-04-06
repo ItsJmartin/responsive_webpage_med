@@ -1,5 +1,4 @@
 * {
-    max-width: 100%;
     font-family: Montserrat;
 }
 
@@ -84,6 +83,7 @@ body {
     transition: 0.5s;
     color: #252B42;
 }
+
 
 header {
     margin: 0;
@@ -195,11 +195,14 @@ header .header_dtls {
 }
 
 .card:hover {
-    color: #FFFFFF;
     transition: 0.5s;
     border-radius: 5px;
     box-shadow: none;
     background-color: #8D5CF6;
+}
+
+.card:hover~h3 {
+    color: white;
 }
 
 .card h3 {
@@ -297,11 +300,6 @@ header .header_dtls {
     Top: 136px;
     Left: 210px
 }
-/* .play_icon:hover{
-    color: #8D5CF6;
-    background-color: #FFFFFF ;
-} */
-
 
 .play_icon .material-symbols-outlined {
     color: #FFFFFF;
@@ -312,9 +310,11 @@ header .header_dtls {
         'GRAD' 0,
         'opsz' 24
 }
-.play_icon .material-symbols-outlined:hover{
-color: black;
+
+.play_icon .material-symbols-outlined:hover {
+    color: black;
 }
+
 /* section 5 cards*/
 
 .card_img {
@@ -841,6 +841,10 @@ input[type="text"] {
     font-size: 14px;
     font-weight: 700;
     color: #737373;
+}
+.end_d ul a:hover{
+    text-decoration: underline;
+    text-decoration-color: #8D5CF6;
 }
 
 .end_d .d_icon {
