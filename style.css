@@ -153,22 +153,22 @@ header .header_dtls {
 
 /* second section */
 
-.section_two .layer {
+.section_headings .layer {
     padding: 100px 112px;
 }
 
-.section_two .start_text {
+.section_headings .start_text {
     color: #8D5CF6;
     font-weight: 700;
 }
 
-.section_two .xl_text {
+.section_headings .xl_text {
     font-size: 40px;
     font-weight: 700;
     color: #252B42;
 }
 
-.section_two .sub_text p {
+.section_headings .sub_text p {
     max-width: 469px;
     font-size: 14px;
     font-weight: 400;
@@ -235,7 +235,7 @@ header .header_dtls {
 
 /* layout 3 and 4*/
 
-.section_three {
+.section_hero_middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -284,11 +284,11 @@ header .header_dtls {
     color: black;
 }
 
-.hero_three {
+.hero_cover {
     position: relative;
 }
 
-.hero_three img {
+.hero_cover img {
     border-radius: 20px;
 }
 
@@ -370,7 +370,6 @@ header .header_dtls {
 
 .i:hover {
     transition: 0.5s;
-    background-color: #8D5CF6;
     font-variation-settings:
         'FILL' 1,
         'wght' 400,
@@ -572,7 +571,7 @@ header .header_dtls {
     transition: 0.5s;
 }
 
-.list:hover .benifits p{
+.list:hover .benifits p {
     color: #FFFFFF;
     transition: 0.5s;
 }
@@ -923,4 +922,16 @@ input[type="text"] {
 
 .f_media i {
     cursor: pointer;
+}
+
+.fa-facebook-official:hover {
+    color: #4267B2;
+}
+
+.fa-instagram:hover {
+    color: #E1306C
+}
+
+.fa-twitter:hover {
+    color: #1DA1F2;
 }
