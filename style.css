@@ -153,7 +153,6 @@ body {
 }
 
 /* second section */
-
 .spec_container {
     max-width: 100%;
     margin: auto;
@@ -161,7 +160,7 @@ body {
 
 .section_headings .layer {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1050px;
 }
 
 .section_headings .start_text {
@@ -186,7 +185,7 @@ body {
 
 .cards_container {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -251,7 +250,7 @@ body {
 
 .section_hero_middle {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1050px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -349,7 +348,7 @@ body {
 }
 
 .card_block {
-    max-width: 1440px;
+    max-width: 1050px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -547,7 +546,7 @@ body {
 
 .pricing {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -736,7 +735,7 @@ body {
 
 .experts {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* padding: 0 112px 140px; */
@@ -822,7 +821,7 @@ body {
 
 .rch_us {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1050px;
     display: flex;
     gap: 80px;
     align-items: center;
@@ -908,11 +907,16 @@ input[type="text"] {
 }
 
 .footer_wrap {
-    max-width: 1440px;
+    max-width: 1050px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* padding: 80px 112px 50px; */
+}
+
+.end_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .end_d ul {
@@ -960,13 +964,11 @@ input[type="text"] {
 }
 
 .main_footer_end {
-    max-width: 1440px;
+    max-width: 1050px;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    left: 20px;
-    right: 20px;
+    justify-content: space-between;
 }
 
 .f_text {
