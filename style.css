@@ -52,6 +52,7 @@ body {
 
 .holow_btn {
     padding: 15px 25px 15px 25px;
+    background-color: transparent;
     border: none;
     color: #8D5CF6;
     font-size: 14px;
@@ -138,7 +139,7 @@ header .header_dtls {
 
 .header_btns .holow_btn {
     padding: 15px 55px;
-    background-color: #f0f0f5;
+    background-color: transparent;
     border: solid #8D5CF6;
     border-radius: 5px;
     margin-left: 10px;
@@ -201,8 +202,12 @@ header .header_dtls {
     background-color: #8D5CF6;
 }
 
-.card:hover~h3 {
-    color: white;
+.card:hover h3 {
+    color: #FFFFFF;
+}
+
+.card:hover p {
+    color: #FFFFFF;
 }
 
 .card h3 {
@@ -291,7 +296,7 @@ header .header_dtls {
     position: absolute;
     border-radius: 73.6px;
     border: none;
-    padding: 20.8px 22.8px 20.8px 22.8px;
+    padding: 18.8px 20.8px 18.8px 20.8px;
     background-color: #8D5CF6;
     color: #FFFFFF;
     align-items: center;
@@ -299,6 +304,11 @@ header .header_dtls {
     display: flex;
     Top: 136px;
     Left: 210px
+}
+
+.play_icon:hover {
+    background-color: #FFFFFF;
+    transition: 0.5s;
 }
 
 .play_icon .material-symbols-outlined {
@@ -311,8 +321,9 @@ header .header_dtls {
         'opsz' 24
 }
 
-.play_icon .material-symbols-outlined:hover {
-    color: black;
+.play_icon:hover .material-symbols-outlined {
+    color: #8D5CF6;
+    transition: 0.5s;
 }
 
 /* section 5 cards*/
@@ -360,7 +371,11 @@ header .header_dtls {
 .i:hover {
     transition: 0.5s;
     background-color: #8D5CF6;
-    color: #FFFFFF;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 .card_block {
@@ -525,6 +540,10 @@ header .header_dtls {
     gap: 10px;
 }
 
+.list .check_p {
+    opacity: 0;
+}
+
 .list:hover {
     transition: 0.5s;
     background-color: #26335D;
@@ -533,6 +552,30 @@ header .header_dtls {
 
 }
 
+.list:hover .check_p {
+    transition: 0.5s;
+    opacity: 100%;
+}
+
+.list:hover .p1 {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.list:hover .p2 {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.list:hover .p4 {
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.list:hover .benifits p{
+    color: #FFFFFF;
+    transition: 0.5s;
+}
 
 .check_p {
     top: -38px;
@@ -811,6 +854,7 @@ input[type="text"] {
 }
 
 .text_btn:hover {
+    transition: 0.5s;
     color: black;
 }
 
@@ -842,7 +886,8 @@ input[type="text"] {
     font-weight: 700;
     color: #737373;
 }
-.end_d ul a:hover{
+
+.end_d ul a:hover {
     text-decoration: underline;
     text-decoration-color: #8D5CF6;
 }
