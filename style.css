@@ -14,7 +14,7 @@ body {
 }
 
 .navbar {
-    padding-top: 20px;
+    padding:20px 0 40px 0;
     margin: auto;
     max-width: 1322px;
     display: flex;
@@ -158,6 +158,10 @@ body {
     margin: auto;
 }
 
+.section_headings {
+    padding: 150px 0 150px 0;
+}
+
 .section_headings .layer {
     margin: auto;
     max-width: 1050px;
@@ -189,6 +193,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    padding-top: 100px;
 }
 
 .card {
@@ -249,6 +254,14 @@ body {
 }
 
 .section_hero_middle {
+    margin: auto;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+.section_hero_middle_second{
     margin: auto;
     max-width: 1050px;
     display: flex;
@@ -728,9 +741,10 @@ body {
 
 /* experts portion */
 
-.exprt_container {
+.testimonial_container {
     margin: auto;
     max-width: 100%;
+    padding: 0 0 100px 0;
 }
 
 .experts {
@@ -901,9 +915,11 @@ input[type="text"] {
 }
 
 /* footer section */
+
 .footer_sub_container {
     margin: auto;
     max-width: 100%;
+    padding:40px 0 0 0;
 }
 
 .footer_wrap {
@@ -913,7 +929,7 @@ input[type="text"] {
     grid-template-columns: repeat(5, 1fr);
 }
 
-.end_list{
+.end_list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -968,7 +984,8 @@ input[type="text"] {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40%;
 }
 
 .f_text {
