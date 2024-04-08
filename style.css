@@ -8,8 +8,8 @@
     --dark-hover-shade: #26335D;
     --danger-color: #E74040;
     --background-shade-lite: #F6F7FB;
-    --background-shade-beige-lite:#FAFAFA;
-    --background-shade-beige:#FFF2F3;
+    --background-shade-beige-lite: #FAFAFA;
+    --background-shade-beige: #FFF2F3;
 }
 
 * {
@@ -21,9 +21,12 @@ body {
     margin: 0;
 }
 
-.header_container {
+.container {
     max-width: 100%;
     margin: auto;
+}
+
+.colorbg_main {
     background-color: var(--background-shade-lite);
 }
 
@@ -140,37 +143,31 @@ body {
 }
 
 .header_btns .filled_btn {
-    padding: 15px 40px;
-    border: solid var(--primry-color);
+    border: 1px solid var(--primry-color);
     cursor: pointer;
 }
 
 .header_btns .filled_btn:hover {
     background-color: transparent;
-    border: solid var(--primry-color);
+    border: 1px solid var(--primry-color);
     color: var(--primary-text-color);
 
 }
 
 .header_btns .holow_btn {
-    padding: 15px 55px;
     background-color: transparent;
-    border: solid var(--primry-color);
+    border: 1px solid var(--primry-color);
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .header_btns .holow_btn:hover {
     background-color: var(--primry-color);
     color: var(--light-text-color);
-    border: solid var(--primry-color);
+    border: 1px solid var(--primry-color);
 }
 
 /* second section */
-.spec_container {
-    max-width: 100%;
-    margin: auto;
-}
 
 .section_headings {
     padding: 150px 0 150px 0;
@@ -261,11 +258,6 @@ body {
 
 
 /* layout 3 and 4*/
-
-.doc_med_container {
-    margin: auto;
-    max-width: 100%;
-}
 
 .section_hero_middle {
     margin: auto;
@@ -369,11 +361,6 @@ body {
 }
 
 /* section 5 cards*/
-
-.experts_container {
-    margin: auto;
-    max-width: 100%;
-}
 
 .card_block {
     max-width: 1050px;
@@ -558,11 +545,6 @@ body {
 }
 
 /* prizing tiles */
-
-.pricing_container {
-    margin: auto;
-    max-width: 100%;
-}
 
 .pricing .material-symbols-outlined {
     font-variation-settings:
@@ -756,18 +738,12 @@ body {
 
 /* experts portion */
 
-.testimonial_container {
-    margin: auto;
-    max-width: 100%;
-    padding: 0 0 100px 0;
-}
-
 .experts {
     margin: auto;
     max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* padding: 0 112px 140px; */
+    padding: 0 0 100px 0;
 }
 
 .experts .expert_wrap {
@@ -842,10 +818,8 @@ body {
 
 /* final section */
 
-.rch_us_container {
+.colorbg_footer_first {
     background-color: var(--background-shade-beige);
-    margin: auto;
-    max-width: 100%;
 }
 
 .rch_us {
@@ -931,17 +905,12 @@ input[type="text"] {
 
 /* footer section */
 
-.footer_sub_container {
-    margin: auto;
-    max-width: 100%;
-    padding: 40px 0 0 0;
-}
-
 .footer_wrap {
     max-width: 1050px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    padding: 40px 0 0 0;
 }
 
 .end_list {
@@ -986,11 +955,9 @@ input[type="text"] {
     color: var(--primary-text-color);
 }
 
-/* main footer */
+/* footer tail */
 
-.main_footer_container {
-    margin: auto;
-    max-width: 100%;
+.colorbg_footer_tail {
     background-color: var(--background-shade-beige-lite);
 }
 
