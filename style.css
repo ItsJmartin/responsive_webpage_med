@@ -48,15 +48,18 @@ body {
 .navlink {
     display: flex;
     align-items: center;
+    gap: 20px
 }
 
 .navlink ul {
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
 }
 
 .navlink ul a {
     color: var(--secondary-text-color);
-    padding: 0 10px;
     text-align: center;
     text-decoration: none;
     font-weight: 600;
@@ -962,12 +965,12 @@ input[type="text"] {
 }
 
 .main_footer_end {
-    max-width: 1050px;
-    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 40%;
+    max-width: 1050px;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    justify-content: space-around;
 }
 
 .f_text {
