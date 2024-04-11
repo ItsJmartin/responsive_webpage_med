@@ -201,7 +201,7 @@ body {
 
 /* cards */
 
-.cards_container {
+.cards_wrap {
     margin: auto;
     max-width: 1050px;
     display: grid;
