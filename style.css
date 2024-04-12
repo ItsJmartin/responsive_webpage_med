@@ -22,17 +22,20 @@ body {
 }
 
 .container {
-    max-width: 100%;
-    margin: auto;
+    margin: 0px auto;
+    max-width: 1440px;
 }
 
-.colorbg_main {
+.colorbg_header {
     background-color: var(--background-shade-lite);
+}
+
+.light_bg {
+    color: var(--light-background-color);
 }
 
 .navbar {
     padding: 20px 0 40px 0;
-    margin: auto;
     max-width: 1322px;
     display: flex;
     align-items: center;
@@ -58,7 +61,11 @@ body {
 
 }
 
-.navlink ul a {
+.navlink ul li {
+    list-style-type: none;
+}
+
+.navlink ul li a {
     color: var(--secondary-text-color);
     text-align: center;
     text-decoration: none;
@@ -67,7 +74,7 @@ body {
     cursor: pointer;
 }
 
-.navlink ul a:hover {
+.navlink ul li a:hover {
     transition: 0.5s;
     color: var(--primary-text-color);
 }
@@ -108,44 +115,40 @@ body {
 }
 
 
-.sub_header {
-    margin: auto;
-    max-width: 1440px;
+.banner {
     display: flex;
+    max-width: 1440px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.sub_header .header_dtls {
+.banner_dtls {
     display: flex;
-    padding-left: 100px;
-    background-color: transparent;
     flex-direction: column;
     max-width: 573px;
-    justify-content: center;
 }
 
 .status p {
-    padding-left: 2px;
     font-size: 16px;
     font-weight: 700;
     color: var(--primary-text-color);
 }
 
 .xl_text {
+    max-width: 542px;
     font-size: 58px;
     color: var(--text-color);
     font-weight: 700;
 }
 
-.header_dtls .sub_text {
+.banner_dtls .sub_text {
     max-width: 458px;
     font-size: 20px;
     font-weight: 400;
     color: var(--secondary-text-color);
 }
 
-.header_btns .filled_btn {
+.banner_dtls .filled_btn {
     border: 1px solid var(--primry-color);
     cursor: pointer;
 }
@@ -170,29 +173,28 @@ body {
     border: 1px solid var(--primry-color);
 }
 
+
 /* second section */
 
-.section_headings {
-    padding: 150px 0 100px 0;
-}
-
-.section_headings .layer {
-    margin: auto;
+.section_heading {
     max-width: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.section_headings .start_text {
+.section_heading .start_text {
     color: var(--primary-text-color);
     font-weight: 700;
 }
 
-.section_headings .xl_text {
+.section_heading .xl_text {
     font-size: 40px;
     font-weight: 700;
     color: var(--text-color);
 }
 
-.section_headings .sub_text p {
+.section_heading .sub_text p {
     max-width: 469px;
     font-size: 14px;
     font-weight: 400;
@@ -202,12 +204,10 @@ body {
 /* cards */
 
 .cards_wrap {
-    margin: auto;
     max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding-bottom: 150px;
 }
 
 .card {
