@@ -26,6 +26,16 @@ section {
 
 .container {
     margin: 0px auto;
+    max-width: 1050px;
+}
+
+.container_mid{
+    max-width: 1322px;
+    margin: auto;
+}
+
+.container_large {
+    margin: auto;
     max-width: 1440px;
 }
 
@@ -43,7 +53,8 @@ section {
 
 .navbar {
     padding: 30px 0;
-    max-width: 1322px;
+    /* max-width: 1322px; */
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -124,31 +135,34 @@ section {
 
 .banner {
     display: flex;
-    max-width: 1440px;
     align-items: center;
+    justify-content: center;
 }
 
 .banner_dtls {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    max-width: 573px;
-    padding-left: 60px;
+    max-width: 437px;
+    gap: 30px;
 }
 
-.status p {
+.banner_dtls .status p {
     font-size: 16px;
     font-weight: 700;
     color: var(--primary-text-color);
 }
 
-.xl_text {
-    max-width: 542px;
-    font-size: 58px;
+.banner_dtls .xl_text p {
+    margin: 0;
+    font-size: 46px;
     color: var(--text-color);
     font-weight: 700;
+
 }
 
-.banner_dtls .sub_text {
+.banner_dtls .sub_text p {
+    margin: 0;
     max-width: 458px;
     font-size: 20px;
     font-weight: 400;
@@ -185,7 +199,6 @@ section {
 
 
 .section_heading {
-    max-width: 1050px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -221,7 +234,6 @@ section {
 
 .cards_wrap {
     margin: auto;
-    max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -281,7 +293,6 @@ section {
 
 .section_hero_middle {
     margin: auto;
-    max-width: 1050px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -290,7 +301,6 @@ section {
 
 .section_hero_middle_second {
     margin: auto;
-    max-width: 1050px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -383,7 +393,6 @@ section {
 /* section 5 cards*/
 
 .card_block {
-    max-width: 1050px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -577,7 +586,6 @@ section {
 
 .pricing {
     margin: auto;
-    max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -761,10 +769,8 @@ section {
 
 .experts {
     margin: auto;
-    max-width: 1050px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 0 100px 0;
 }
 
 .experts .expert_wrap {
@@ -895,55 +901,47 @@ input[type="text"] {
     color: var(--text-color);
 }
 
-/* footer tail section */
+/* footer section */
 
 .list_wrap {
-    max-width: 1050px;
-    margin: auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 40px 0 0 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+    align-items: center;
+    margin: auto;
 }
 
 .end_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 30px 0 30px 0;
 }
 
-.end_d ul {
-    display: flex;
-    flex-direction: column;
-
+.end_list ul {
+    padding: 0;
 }
 
-.end_d ul p {
+.end_list ul li p {
     color: var(--text-color);
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 20px;
 }
 
-.end_d ul a {
+.end_list ul a {
+    display: flex;
+    align-items: center;
     padding-bottom: 15px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
     color: var(--secondary-text-color);
+    gap: 15px;
 }
 
-.end_d ul a:hover {
+.end_list ul li a:hover {
     text-decoration: underline;
     text-decoration-color: var(--primry-color);
 }
 
-.end_d .d_icon {
-    display: flex;
-    gap: 15px;
-    padding: 4px 0;
-}
-
-.d_icon span {
+.end_list span{
     color: var(--primary-text-color);
 }
 
@@ -956,10 +954,9 @@ input[type="text"] {
 .tail {
     display: flex;
     align-items: center;
-    max-width: 1322px;
     margin: auto;
-    padding: 10px 0 10px 0;
     justify-content: space-around;
+    padding: 10px 0;
 }
 
 .f_text {
@@ -976,6 +973,8 @@ input[type="text"] {
 
 .social_media_icons i {
     cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
 }
 
 .fa-facebook-official:hover {
