@@ -54,31 +54,46 @@ section {
 /*buttons */
 
 .outline_btn {
+    box-shadow: 0 13px 19px 0 #00000012;
     border-radius: 5px;
     border-color: var(--primry-color);
     color: var(--primary-text-color);
     background-color: transparent;
     font-weight: 600;
     font-size: 14px;
-    align-items: center;
 }
 
 .outline_btn:hover {
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.transparent_btn {
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 5;
+    background-color: transparent;
+    border: none;
+}
+
+.transparent_btn:hover {
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .filled_btn {
+    box-shadow: 0 13px 19px 0 #00000012;
     background-color: var(--primry-color);
     border-color: var(--primry-color);
     color: var(--light-text-color);
     font-size: 14px;
     font-weight: 600;
-    align-items: center;
     border-radius: 5px;
 }
 
 .filled_btn:hover {
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .navbar {
@@ -122,10 +137,18 @@ section {
 }
 
 .navlink ul li a:hover {
+    transition: 0.5s;
     color: var(--primary-text-color);
 }
 
-.navbtn .outline_btn {
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .transparent_btn {
+    color: var(--primary-text-color);
     padding: 15px 25px 15px 25px;
     border: none;
     font-size: 14px;
@@ -133,11 +156,11 @@ section {
     cursor: pointer;
 }
 
-.navbtn .outline_btn:hover {
+.navbar .transparent_btn:hover {
     color: var(--text-color);
 }
 
-.navbtn .filled_btn {
+.navbar .btn .filled_btn {
     display: inline-flex;
     padding: 15px 25px 15px 25px;
     border-radius: 5px;
@@ -151,7 +174,7 @@ section {
     cursor: pointer;
 }
 
-.navbtn .filled_btn:hover {
+.navbar .btn .filled_btn:hover {
     color: var(--text-color);
 }
 
@@ -191,20 +214,20 @@ section {
     color: var(--secondary-text-color);
 }
 
-.banner_dtls .filled_btn {
+.banner .btn .filled_btn {
     padding: 15px 25px 15px 25px;
     border: 1px solid var(--primry-color);
     cursor: pointer;
 }
 
-.header_btns .filled_btn:hover {
+.banner .btn .filled_btn:hover {
     background-color: transparent;
     border: 1px solid var(--primry-color);
     color: var(--primary-text-color);
 
 }
 
-.header_btns .outline_btn {
+.banner .btn .outline_btn {
     padding: 15px 25px 15px 25px;
     background-color: transparent;
     border: 1px solid var(--primry-color);
@@ -212,7 +235,7 @@ section {
     margin-left: 5px;
 }
 
-.header_btns .outline_btn:hover {
+.banner .btn .outline_btn:hover {
     background-color: var(--primry-color);
     color: var(--light-text-color);
     border: 1px solid var(--primry-color);
@@ -359,7 +382,7 @@ section {
     max-width: 351px;
 }
 
-.detailes .filled_btn {
+.detailes .transparent_btn {
     display: flex;
     justify-content: start;
     border: none;
@@ -370,7 +393,15 @@ section {
     gap: 10px;
 }
 
-.detailes .filled_btn:hover {
+.detailes .transparent_btn .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.detailes .transparent_btn:hover {
     color: var(--text-color);
 }
 
@@ -383,10 +414,11 @@ section {
 }
 
 .play_icon {
+    width: 100px;
+    height: 100px;
     position: absolute;
     border-radius: 50%;
     border: none;
-    padding: 20px;
     background-color: var(--primry-color);
     color: var(--light-text-color);
     align-items: center;
@@ -394,6 +426,7 @@ section {
     display: flex;
     top: calc(50% - 50px);
     left: calc(50% - 50px);
+
 }
 
 .play_icon:hover {
@@ -420,13 +453,23 @@ section {
 
 .card_block {
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     gap: 30px;
 }
 
+.cards {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
 .card_img {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
     position: relative;
 }
 
@@ -444,7 +487,7 @@ section {
     border-radius: 3px;
 }
 
-.card_icon {
+.icon_btn {
     position: absolute;
     left: 0;
     right: 0;
@@ -456,10 +499,10 @@ section {
 
 }
 
-.i {
+.icon_btn .transparent_btn {
     background-color: var(--light-background-color);
     color: var(--dark-hover-shade);
-    border-radius: 100px;
+    border-radius: 50%;
     height: 40px;
     width: 40px;
     display: flex;
@@ -467,7 +510,7 @@ section {
     align-items: center;
 }
 
-.i:hover {
+.icon_btn .transparent_btn:hover {
     transition: 0.5s;
     font-variation-settings:
         'FILL' 1,
@@ -478,24 +521,28 @@ section {
 
 /* dtls head */
 
-.dtls {
-    padding: 25px 25px 35px 25px;
+.card_dtls {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px 35px 10px;
     gap: 10px;
 }
 
-.dtls .d_head {
+.card_dtls .d_head {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.dtls .dept {
+.card_dtls h6 {
+    margin: 0;
     color: var(--primary-text-color);
     font-weight: 700;
-    font-size: 12.7px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
-.dtls .star .material-symbols-outlined {
+.card_dtls .star .material-symbols-outlined {
     color: #FFCE31;
     font-variation-settings:
         'FILL' 1,
@@ -504,12 +551,12 @@ section {
         'opsz' 24
 }
 
-.rating {
+.card_dtls .rating {
     margin: 0;
     padding: 0;
 }
 
-.star {
+.card_dtls .star {
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -521,28 +568,23 @@ section {
     color: var(--light-text-color);
 }
 
-/* dtls sub */
-.d_sub {
-    align-items: center;
-    justify-content: space-between;
-}
-
 /* dtls dark */
-.d_dark {
+
+.card_dtls .d_dark {
     width: 131px;
     font-weight: 700;
     font-size: 16px;
     color: var(--text-color);
 }
 
-.d_lite {
+.card_dtls .d_lite {
     width: 182px;
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-text-color);
 }
 
-.btn_dlite .material-symbols-outlined {
+.card_dtls .icon_dlite .material-symbols-outlined {
     font-variation-settings:
         'FILL' 1,
         'wght' 200,
@@ -550,37 +592,38 @@ section {
         'opsz' 24
 }
 
-.btn_dlite {
+.card_dtls .icon_dlite {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--secondary-text-color);
 }
 
-.btn_dlite p {
+.card_dtls .icon_dlite p {
     font-weight: 700;
     font-size: 14px;
 }
 
-.d_prise {
+.card_dtls .d_prise {
     display: flex;
     font-size: 16px;
     font-weight: 700;
     gap: 5px;
 }
 
-.d_prise .p1 {
+.card_dtls .d_prise .p1 {
     color: #BDBDBD;
 }
 
-.d_prise .p2 {
+.card_dtls .d_prise .p2 {
     color: #FF7B52;
 }
 
 /* dtls filled button */
 
-.d_sub .outline_btn {
+.card_dtls .d_sub .outline_btn {
     display: inline-flex;
+    align-items: center;
     color: var(--primary-text-color);
     border-radius: 37px;
     padding: 10px 20px 10px 20px;
@@ -590,7 +633,7 @@ section {
     gap: 10px;
 }
 
-.d_sub .filled_btn:hover {
+.card_dtls .d_sub .outline_btn:hover {
     background-color: var(--primry-color);
     color: var(--light-text-color);
 }
@@ -743,10 +786,10 @@ section {
     font-size: 14px;
 }
 
-.pricing .filled_btn:hover{
+.pricing .filled_btn:hover {
     background-color: var(--light-background-color);
     color: #2DC071;
-    border-color:none;
+    border-color: none;
 }
 
 .list .benifits {
@@ -848,19 +891,19 @@ section {
         'opsz' 24
 }
 
-.experts .id_wrap {
+.experts .expert_wrap {
     justify-content: center;
     align-items: center;
 }
 
-.id_wrap .idin {
+.expert_wrap .idin {
     text-align: center;
     font-weight: 700;
     font-size: 16px;
     color: var(--text-color);
 }
 
-.id_wrap .dsgn {
+.expert_wrap .dsgn {
     text-align: center;
     font-weight: 700;
     font-size: 14px;
@@ -911,7 +954,6 @@ input[type="text"] {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--primry-color);
     color: var(--light-text-color);
     font-size: 14px;
     font-weight: 400;
@@ -983,7 +1025,7 @@ input[type="text"] {
     padding: 10px 0;
 }
 
-.f_text {
+.colorbg_footer_tail p {
     font-weight: 700;
     font-size: 14px;
     color: var(--secondary-text-color);
