@@ -97,6 +97,7 @@ section {
 }
 
 .navbar {
+    position: relative;
     padding: 30px 0;
     margin: auto;
     display: flex;
@@ -124,10 +125,13 @@ section {
 }
 
 .navlink ul li {
+    position: relative;
     list-style-type: none;
 }
 
 .navlink ul li a {
+    display: flex;
+    align-items: center;
     color: var(--secondary-text-color);
     text-align: center;
     text-decoration: none;
@@ -140,6 +144,64 @@ section {
     transition: 0.5s;
     color: var(--primary-text-color);
 }
+
+/* down drop */
+
+.drop_list {
+    display: none;
+    box-shadow: 0 13px 19px 0 #00000012;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.drop_list ul {
+    display: block;
+    padding: 0;
+}
+
+.drop_list ul li a {
+    text-align: center;
+    display: inline-flex;
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.navlink ul li:hover .drop_list {
+    display: block;
+}
+
+/* side drop */
+
+.drop_list1 {
+    display: none;
+    box-shadow: 0 13px 19px 0 #00000012;
+    position: absolute;
+    top: 7px;
+    right: -105px
+}
+
+.drop_list1 ul {
+    display: block;
+    padding: 0;
+}
+
+.drop_list1 ul li a {
+    text-align: center;
+    display: inline-flex;
+    color: var(--secondary-text-color);
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.drop_list ul li:hover .drop_list1 {
+    display: block;
+}
+
+
 
 .btn {
     display: flex;
