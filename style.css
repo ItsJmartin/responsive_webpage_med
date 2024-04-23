@@ -149,6 +149,7 @@ section {
 
 .drop_list {
     display: none;
+    min-width: 100px;
     box-shadow: 0 13px 19px 0 #00000012;
     position: absolute;
     top: 100%;
@@ -162,7 +163,6 @@ section {
 
 .drop_list ul li a {
     text-align: center;
-    display: inline-flex;
     color: var(--secondary-text-color);
     font-size: 12px;
     font-weight: 600;
@@ -179,8 +179,8 @@ section {
     display: none;
     box-shadow: 0 13px 19px 0 #00000012;
     position: absolute;
-    top: 7px;
-    right: -105px
+    top: -5px;
+    right: -109px
 }
 
 .drop_list1 ul {
@@ -731,21 +731,12 @@ section {
     gap: 10px;
 }
 
-.list .check_p {
-    opacity: 0;
-}
-
 .list:hover {
     transition: 0.5s;
     background-color: var(--dark-hover-shade);
     color: var(--light-text-color);
     border-radius: 5px;
 
-}
-
-.list:hover .check_p {
-    transition: 0.5s;
-    opacity: 100%;
 }
 
 .list:hover .p1 {
@@ -999,7 +990,7 @@ label {
     position: relative;
 }
 
-input[type="text"] {
+input[type="email"] {
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-text-color);
@@ -1046,11 +1037,10 @@ input[type="text"] {
     padding: 0;
 }
 
-.end_list ul li p {
+.end_list ul li h5 {
     color: var(--text-color);
     font-size: 16px;
     font-weight: 700;
-    padding-bottom: 20px;
 }
 
 .end_list ul a {
@@ -1096,11 +1086,11 @@ input[type="text"] {
 .social_media_icons {
     display: flex;
     gap: 20px;
-    color: var(--primary-text-color);
     padding-right: 10%;
 }
 
-.social_media_icons i {
+.social_media_icons a {
+    color: var(--primary-text-color);
     cursor: pointer;
     font-size: 20px;
     transition: .5s;
