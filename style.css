@@ -25,17 +25,17 @@ section {
 }
 
 .container {
-    margin: 0px auto;
+    margin: 0 auto;
     max-width: 1050px;
 }
 
 .container_mid {
     max-width: 1322px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .container_large {
-    margin: auto;
+    margin: 0 auto;
     max-width: 1440px;
 }
 
@@ -150,6 +150,7 @@ section {
 .drop_list {
     display: none;
     min-width: 100px;
+    background-color: var(--background-shade-lite);
     box-shadow: 0 13px 19px 0 #00000012;
     position: absolute;
     top: 100%;
@@ -176,6 +177,7 @@ section {
 /* side drop */
 
 .drop_list1 {
+    background-color: var(--background-shade-lite);
     display: none;
     box-shadow: 0 13px 19px 0 #00000012;
     position: absolute;
@@ -199,6 +201,7 @@ section {
 
 .drop_list ul li:hover .drop_list1 {
     display: block;
+    transition: 3s ease-in-out;
 }
 
 
@@ -244,7 +247,7 @@ section {
 .banner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
 }
 
 .banner_dtls {
@@ -276,8 +279,12 @@ section {
     color: var(--secondary-text-color);
 }
 
+.banner .btn {
+    gap: 15px;
+}
+
 .banner .btn .filled_btn {
-    padding: 15px 25px 15px 25px;
+    padding: 15px 25px;
     border: 1px solid var(--primry-color);
     cursor: pointer;
 }
@@ -290,11 +297,10 @@ section {
 }
 
 .banner .btn .outline_btn {
-    padding: 15px 25px 15px 25px;
+    padding: 15px 25px;
     background-color: transparent;
     border: 1px solid var(--primry-color);
     border-radius: 5px;
-    margin-left: 5px;
 }
 
 .banner .btn .outline_btn:hover {
@@ -303,9 +309,7 @@ section {
     border: 1px solid var(--primry-color);
 }
 
-
 /* second section */
-
 
 .section_heading {
     margin: auto;
@@ -342,20 +346,17 @@ section {
 /* cards */
 
 .cards_wrap {
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
 .card {
+    border-radius: 10px;
     box-shadow: 0 13px 19px 0 #00000012;
-    padding: 34px 40px;
-    align-items: flex-start;
-    align-self: stretch;
+    padding: 35px 40px;
     display: flex;
     flex-direction: column;
-    max-width: 241px;
     gap: 20px;
 }
 
@@ -434,8 +435,6 @@ section {
     height: 7px;
     background-color: var(--danger-color);
     margin-bottom: inherit;
-
-
 }
 
 .sub_head {
@@ -449,7 +448,7 @@ section {
     justify-content: start;
     border: none;
     background-color: transparent;
-    max-width: 130px;
+    /* max-width: 130px; */
     color: var(--primary-text-color);
     align-items: center;
     gap: 10px;
@@ -471,8 +470,8 @@ section {
     position: relative;
 }
 
-.hero_cover img {
-    border-radius: 20px;
+.hero_cover img{
+    border-radius: 10px;
 }
 
 .play_icon {
@@ -514,7 +513,6 @@ section {
 /* section 5 cards*/
 
 .card_block {
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -524,7 +522,6 @@ section {
 .cards {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
 }
 
@@ -533,6 +530,10 @@ section {
     padding: 0;
     max-width: 100%;
     position: relative;
+}
+
+.card_img img{
+    border-radius: 10px;
 }
 
 .card_img::before {
@@ -711,7 +712,6 @@ section {
 }
 
 .pricing {
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -719,15 +719,15 @@ section {
 
 
 .list {
+    border-radius: 10px;
     position: relative;
-    background-color: #FFFFFF;
     box-shadow: 0 13px 19px 0 #00000012;
     align-items: center;
     align-self: stretch;
     display: flex;
     flex-direction: column;
     max-width: 328px;
-    padding: 50px 40px 50px 40px;
+    padding: 50px 40px;
     gap: 10px;
 }
 
@@ -1003,6 +1003,9 @@ input[type="email"] {
 }
 
 .text_box .filled_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     right: 0;
@@ -1030,7 +1033,7 @@ input[type="email"] {
 }
 
 .end_list {
-    padding: 30px 0 30px 0;
+    padding: 30px 0;
 }
 
 .end_list ul {
