@@ -106,10 +106,32 @@ section {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-size: 24px;
     font-weight: 700;
     color: var(--text-color);
 }
+
+/* .logo span{
+    display: none;
+} */
+
+/* .open_menu{
+    position: absolute;
+    color: var(--text-color);
+}
+
+.open_menu{
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+#check{
+    display: none;
+} */
 
 .navlink {
     display: flex;
@@ -144,6 +166,8 @@ section {
     transition: 0.5s;
     color: var(--primary-text-color);
 }
+
+
 
 /* down drop */
 
@@ -995,8 +1019,8 @@ input[type="email"] {
     font-weight: 400;
     color: var(--secondary-text-color);
     border: none;
-    width: 688px;
-    height: 15px;
+    max-width: 688px;
+    max-height: 15px;
     padding: 20px 40px;
     border-radius: 5px;
     box-shadow: 0 23px 29px 0 #00000012;
