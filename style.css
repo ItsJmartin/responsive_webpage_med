@@ -162,7 +162,7 @@ section {
 }
 
 .navlink ul li a:hover {
-    transition: 0.5s;
+    /* transition: 0.5s; */
     color: var(--primary-text-color);
 }
 
