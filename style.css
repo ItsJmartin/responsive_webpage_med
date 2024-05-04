@@ -114,27 +114,26 @@ section {
     color: var(--text-color);
 }
 
-/* .logo span{
+#check {
     display: none;
-} */
+}
 
-/* .open_menu{
-    position: absolute;
+.hamburger_menu {
+    display: none;
+}
+
+.hamburger_menu span {
+    font-size: 35px;
     color: var(--text-color);
 }
 
-.open_menu{
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
+.hamburger_menu span:hover {
+    color: var(--primry-color);
 }
-
-#check{
-    display: none;
-} */
 
 .navlink {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 }
@@ -271,7 +270,7 @@ section {
 .banner {
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .banner_dtls {
@@ -494,7 +493,7 @@ section {
     position: relative;
 }
 
-.hero_cover img{
+.hero_cover img {
     border-radius: 10px;
 }
 
@@ -556,7 +555,7 @@ section {
     position: relative;
 }
 
-.card_img img{
+.card_img img {
     border-radius: 10px;
 }
 
@@ -1019,7 +1018,7 @@ input[type="email"] {
     font-weight: 400;
     color: var(--secondary-text-color);
     border: none;
-    max-width: 688px;
+    min-width: 688px;
     max-height: 15px;
     padding: 20px 40px;
     border-radius: 5px;
