@@ -228,8 +228,6 @@ section {
     transition: 3s ease-in-out;
 }
 
-
-
 .btn {
     display: flex;
     align-items: center;
@@ -265,6 +263,10 @@ section {
 
 .navbar .btn .filled_btn:hover {
     color: var(--text-color);
+}
+
+.navbar .link_btn{
+    display: none;
 }
 
 
