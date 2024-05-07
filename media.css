@@ -13,20 +13,53 @@
 }
 
 @media(max-width:1024px) {
-  .container_large {
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navlink {
+    gap: 20px;
+  }
+
+  .mainlink {
+    padding-left: 0;
+  }
+
+  .navlink ul {
+    gap: 10px;
+  }
+
+  .navlink ul li a {
+    font-size: 12px;
+  }
+
+  .navbar .btn {
+    gap: 0;
+  }
+
+  .navbar .btn .transparent_btn {
+    font-size: 12px;
+  }
+
+  .navbar .btn .filled_btn {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  /* .container_large {
     margin: auto;
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
 
   .container {
     margin: auto;
-    padding: 0px 20px;
+    padding: 0px 15px;
   }
 
   .container_mid {
     margin: auto;
-    padding: 0px 20px;
-  }
+  } */
 
   .banner .hero_one {
     display: none;
@@ -41,6 +74,16 @@
 
   .banner .btn .outline_btn {
     padding: 15px 40px;
+  }
+
+  .cards_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    min-width: 236px;
   }
 
   .card_block {
@@ -69,6 +112,12 @@
     padding: 10px 20%;
   }
 
+  .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
 }
 
 @media (max-width:768px) {
@@ -77,18 +126,19 @@
     gap: 15px;
   }
 
-  .navbar .transparent_btn{
-    display: none;
-  }
-
   #check:checked~ul {
     left: 0;
     top: 0;
   }
 
-  .hamburger_menu{
+  .hamburger_menu {
     display: block;
     border-radius: 5px;
+  }
+
+  .hamburger_menu span {
+    display: flex;
+    align-items: center;
   }
 
   .navlink ul {
@@ -111,6 +161,23 @@
   .navlink .logo {
     display: block;
     align-items: center;
+  }
+
+  .navlink ul li a {
+    font-size: 14px;
+  }
+
+  .navbar .btn {
+    gap: 10px;
+  }
+
+  .navbar .btn .transparent_btn {
+    font-size: inherit;
+  }
+
+  .navbar .btn .filled_btn {
+    padding: 15px 25px;
+    font-size: inherit;
   }
 
   .navlink li a {
@@ -245,6 +312,10 @@
 
 @media(max-width:540px) {
 
+  .navbar .btn {
+    display: none;
+  }
+
   .banner_dtls .xl_text p {
     font-size: 36px;
   }
@@ -267,10 +338,6 @@
 
   .end_list ul li h5 {
     font-size: 14px;
-  }
-
-  .navbar .btn {
-    display: none;
   }
 
   .cards_wrap {
@@ -315,7 +382,7 @@
   }
 
   input[type="email"] {
-    max-width: 320px;
+    min-width: 300px;
     max-height: 10px;
   }
 
@@ -334,6 +401,22 @@
 
 @media(max-width:420px) {
 
+
+
+  .banner .btn .filled_btn {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .banner .btn .outline_btn {
+    padding: 10px 33px;
+    font-size: 12px;
+  }
+
+  .detailes .transparent_btn {
+    padding: 10px 70px;
+  }
+
   .cards_wrap .card {
     min-width: 0px;
   }
@@ -346,6 +429,15 @@
   .pricing .list {
     align-self: center;
     max-width: fit-content;
+  }
+
+  .check_p {
+    top: -25px;
+    right: -5px;
+  }
+
+  .pricing .filled_btn {
+    padding: 15px 60px
   }
 
   input[type="email"] {
