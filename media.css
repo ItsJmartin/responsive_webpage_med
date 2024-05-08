@@ -307,23 +307,17 @@
   }
 
   .navbar .link_btn {
-    display: block;
-    justify-content: space-between;
-  }
-
-  .navbar .link_btn li a{
-    display: flex;
-    justify-content: center;
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
-    color: var(--primary-text-color);
-    cursor: pointer;
+    justify-content: center
   }
 
-  .navbar .link_btn li a:hover{
-    color: var(--text-color);
-    text-decoration: underline;
-    box-shadow: 0 13px 19px 0 #00000012;
+  .link_btn .filled_btn{
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .banner_dtls .xl_text p {
